@@ -15,7 +15,7 @@ jobs:
       - name: Install Composer dependencies
         run: composer install --no-progress --prefer-dist --optimize-autoloader
       - name: Run PHPCBF
-        run: ./vendor/bin/phpcbf --standard=phpcs.xml
+        run: ./vendor/bin/phpcbf --standard=psr12 bad.php
       - name: Commit Changes
         uses: stefanzweifel/git-auto-commit-action@v4
         if: always()
