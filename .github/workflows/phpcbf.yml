@@ -1,5 +1,5 @@
 name: Automatically Run PHPCBF
-on: [pull_request]
+on: [push]
 jobs:
   phpcbf:
     runs-on: ubuntu-latest
